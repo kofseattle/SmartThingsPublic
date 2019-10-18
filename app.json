@@ -1,0 +1,49 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "description": "speaks server",
+  "env": {
+    "amazonDomain": {
+      "required": true
+    },
+    "appCallbackUrl": {
+      "required": true
+    },
+    "hostUrl": {
+      "required": true
+    },
+    "hubPlatform": {
+      "required": true
+    },
+    "regionLocale": {
+      "required": true
+    },
+    "serviceDebug": {
+      "required": true
+    },
+    "serviceTrace": {
+      "required": true
+    },
+    "smartThingsUrl": {
+      "required": true
+    },
+    "useHeroku": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "SmartThingsPublic",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
